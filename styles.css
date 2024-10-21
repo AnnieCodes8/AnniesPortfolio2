@@ -1,0 +1,209 @@
+
+body {
+    background-color: #DEE5D4;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #DEE5D4;
+    display: flex;
+    height: 8vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 20px;
+    color:#8EACCD;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.logo {
+    display: inline-flex;
+    padding-left: 20px ;
+    justify-content: flex-start;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+
+/*NAVBAR*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50px;
+    align-content: center;
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+
+div ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.navlist {
+    display: inline-flex;
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a3552;
+}
+
+header a:hover {
+    color: #F19669;
+}
+
+/*HERO*/
+
+.hero {
+    background-color: #8EACCD;
+    height: 600px;
+}
+
+.hero .container h1 {
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #F19669;
+    padding-bottom: 30px;
+}
+
+.hero p {
+    font-size: 24px;
+    color:#F19669;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+.herowindow {
+    background-color: #DEE5D4;
+}
+
+.orange {
+    background-color: #F19669;
+    color: #FEF9D9;
+    padding: 10px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    border-color: #F19669;
+    border-radius: 5%;
+    width: 150px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  color 0.3s ease-in-out
+}
+
+.orange:hover {
+    background-color:#8EACCD;
+    border-color: #8EACCD;
+    opacity: 0.8;
+}
+
+.blue {
+    background-color: #FEF9D9;
+    color: #F19669;
+    padding: 10px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    border-color: #FEF9D9;
+    border-radius: 5%;
+    width: 150px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  color 0.1s ease-in-out
+}
+
+.blue:hover {
+    background-color:#8EACCD;
+    border-color: #8EACCD;
+    color: #FEF9D9;
+    opacity: 0.8;
+}
+
+/*SECTION ONE - FAVOURITE WEBSITES*/
+
+.container1 {
+    display: grid;
+    height: 90vh;
+    background-color: #FEF9D9;
+    padding: 60px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.explainer {
+    display: flex;
+    align-items: top;
+    grid-row: span 2;
+
+}
+
+.darkblue {
+    background-color: #1a3552;
+    color:#FEF9D9;
+}
+
+.darkorange {
+    background-color: #F19669;
+    color: #FEF9D9;
+}
+
+.lightblue {
+    background-color: #8EACCD;
+    color: #1a3552;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+
+/*SECTION TWO - MOTIVATIONS*/
+
+.motivation {
+    background-color: #DEE5D4;
+    height: 500px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    background-color: #1a3552;
+    height: 300px;
+}
