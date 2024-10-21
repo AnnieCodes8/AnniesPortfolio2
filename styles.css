@@ -1,0 +1,354 @@
+
+body {
+    background-color: #DEE5D4;
+}
+
+div h2 {
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 36px;
+    color: #F19669;
+}
+
+div h3 {
+    font-size: 24px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+div p {
+    font-size: 18px;
+    font-family: "Thasadith", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*HEADER*/
+
+header {
+    background-color: #DEE5D4;
+    display: flex;
+    height: 8vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 14px;
+    color:#8EACCD;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.logo {
+    display: inline-flex;
+    padding-left: 20px ;
+    justify-content: flex-start;
+    flex-basis: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+
+/*NAVBAR*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50px;
+    align-content: center;
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+
+div ul {
+    display: flex;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.navlist {
+    display: inline-flex;
+}
+
+header a {
+    text-decoration: none;
+    font-family: "Thasadith", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a3552;
+}
+
+header .navlist {
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  width 0.5s ease-in-out
+}
+
+header .navlist:hover {
+    a {
+        color: #F19669;
+        font-size: 17px};
+    opacity: 0.6;
+    svg {fill:#F19669};
+}
+
+
+
+/*HERO*/
+
+.hero {
+    background-color: #8EACCD;
+    height: 50%;
+}
+
+.hero .container {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.hero .container h1 {
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #F19669;
+    padding-bottom: 30px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero p {
+    font-size: 24px;
+    color:#F19669;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+    padding-bottom: 20px;
+}
+
+.herowindow {
+    background-color: #DEE5D4;
+}
+
+.orange {
+    background-color: #F19669;
+    color: #FEF9D9;
+    padding: 10px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    border-color: #F19669;
+    border-radius: 5%;
+    width: 150px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  color 0.3s ease-in-out
+}
+
+.orange:hover {
+    background-color:#8EACCD;
+    border-color: #8EACCD;
+    opacity: 0.8;
+}
+
+.blue {
+    background-color: #FEF9D9;
+    color: #F19669;
+    padding: 10px;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+    border-color: #FEF9D9;
+    border-radius: 5%;
+    width: 150px;
+    box-shadow: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  color 0.1s ease-in-out
+}
+
+.blue:hover {
+    background-color:#8EACCD;
+    border-color: #8EACCD;
+    color: #FEF9D9;
+    opacity: 0.8;
+}
+
+/*SECTION ONE - FAVOURITE WEBSITES*/
+
+.container1 {
+    display: grid;
+    background-color: #FEF9D9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.explainer {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    grid-row: span 2;
+    padding-right: 70px;
+}
+
+.explainer p {
+    font-size: 28px;
+    color: #F19669;
+    font-weight: 500;
+    padding-top: 20px;  
+}
+
+.darkblue {
+    background-color: #1a3552;
+    color:#FEF9D9;
+}
+
+.darkorange {
+    background-color: #F19669;
+    color: #FEF9D9;
+}
+
+.lightblue {
+    background-color: #8EACCD;
+    color: #1a3552;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    border-radius: 2%;
+    padding: 20px;
+    text-align: center;
+}
+
+.container1 img {
+    width: 100px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out,
+                  width 0.2s ease-in-out
+}
+
+.container1 img:hover {
+    opacity: 0.5;
+    width: 110px
+}
+
+/*SECTION TWO - MOTIVATIONS*/
+
+.motivation {
+    background-color: #8EACCD;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+.motivation h2 {
+    padding-bottom: 20px;
+    color: #1a3552;
+}
+
+.motivation #myCarousel {
+    font-family: "Thasadith", sans-serif;
+}
+
+.motivation #myCarousel h1 {
+    font-family: "Thasadith", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #DEE5D4;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 2fr;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color:#1a3552;
+    font-family: "Thasadith", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+.footer h3 {
+    font-family: "Playwrite HR", cursive, sans-serif;
+    font-size: 14px;
+    color: #8EACCD;
+}
+
+.footercopyright {
+    display: flex;
+    justify-content: left;
+}
+
+.footerimage {
+    display: flex;
+    justify-content: center;
+}
+
+.footernav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer p {
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out,
+                  width 0.5s ease-in-out;
+}
+
+.footer p:hover {
+        color: #F19669;
+        font-size: 17px;
+        opacity: 0.6;
+        svg {fill:#F19669};
+}
